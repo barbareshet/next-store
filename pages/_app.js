@@ -8,6 +8,9 @@ const MyApp = ({ Component, pageProps }) => {
             <Link href="/about">
                 <a>About</a>
             </Link>
+            <Link href="/contact">
+                <a>Contact</a>
+            </Link>
             <Component {...pageProps} />
             <footer>&copy; Next Store 2021 </footer>
         </>
