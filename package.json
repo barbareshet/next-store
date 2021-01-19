@@ -1,0 +1,18 @@
+{
+  "name": "next-store",
+  "version": "1.0.0",
+  "description": "Next JS store",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Ido Barnea",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^10.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
