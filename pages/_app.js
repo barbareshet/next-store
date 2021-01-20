@@ -11,6 +11,12 @@ const MyApp = ({ Component, pageProps }) => {
             <Link href="/contact">
                 <a>Contact</a>
             </Link>
+            <Link href="/client-side">
+                <a>Client Side Rendering</a>
+            </Link>
+            <Link href="/ssg">
+                <a>Server Side Rendering</a>
+            </Link>
             <Component {...pageProps} />
             <footer>&copy; Next Store 2021 </footer>
         </>
