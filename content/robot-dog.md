@@ -2,6 +2,7 @@
 name: Robot Dog
 description: A robot Dog
 price: 21000
+img: toy-robot-P43NPA3.jpg
 ---
 I'm baby godard af bushwick sartorial yuccie adaptogen, occupy literally. Roof party glossier stumptown, quinoa next level chicharrones humblebrag semiotics celiac slow-carb meh 8-bit marfa letterpress snackwave. Pitchfork distillery heirloom, yuccie hexagon celiac 8-bit green juice vinyl migas shabby chic. Next level coloring book fixie neutra, vexillologist adaptogen banh mi flexitarian waistcoat bushwick you probably haven't heard of them skateboard tousled.
 

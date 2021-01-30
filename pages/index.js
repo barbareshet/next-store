@@ -1,24 +1,53 @@
 import fs from "fs";
 import matter from "gray-matter"
 import Link from "next/link";
+import styled from "styled-components";
+import Image from 'next/image'
+const imgFolder = "/img/";
+const ProductsContainer = styled.div`
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between; 
+`
+
+const Card = styled.div`
+    max-width:23%;
+    text-align:center;
+    width: 100%;
+    
+    a{
+        color:#fff;
+        text-decoration:none;
+        h3{
+            font-weight:400;
+        }
+    }
+`
 const HomePage = (props) => {
     // console.log(props)
     return(
         <div>
             <h1>Welcome to Next Store</h1>
-            {props.products.map( (product) => {
-                return (
-                    <div className="product" key={product.slug}>
-                        <Link href={product.slug}>
-                            <a>
-                                <h3>{product.name}</h3>
-                            </a>
-                        </Link>
-                        <p>{product.description}</p>
-                        <p>{product.price / 100} &#x20aa;</p>
-                    </div>
-                )
-            })}
+            <ProductsContainer>
+                {props.products.map( (product) => {
+                    return (
+                        <Card className="product" key={product.slug}>
+                            <Image src={imgFolder+product.img}
+                                   width={250}
+                                    height={300}/>
+                            <Link href={product.slug}>
+                                <a>
+                                    <h3>{product.name}</h3>
+                                </a>
+                            </Link>
+                            <p>{product.description}</p>
+                            <p>{product.price / 100} &#x20aa;</p>
+                        </Card>
+                    )
+                })}
+            </ProductsContainer>
         </div>
     )
 }
